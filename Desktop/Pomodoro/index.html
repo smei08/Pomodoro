@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="title">
+      <h1>POMODORO TIMER</h1>
+    </header>
+    <blockquote id="quote-OTD"></blockquote>
+    <main id="pomodoro">
+      <nav id="timer-break-sections" role="tablist" aria-label="Timer mode">
+        <button id="timer" role="tab" aria-selected="true">POMODORO</button>
+        <button id="break" role="tab" aria-selected="false">BREAK</button>
+        <button id="long-break" role="tab" aria-selected="false">
+          LONG BREAK
+        </button>
+      </nav>
+      <div id="timer-adjust" role="group" aria-label="Adjust timer">
+        <button id="decrement" aria-label="Decrease time">-</button>
+        <output id="timer-string" aria-live="polite"></output>
+        <button id="increment" aria-label="Increase time">+</button>
+      </div>
+      <div id="start-stop-btn">
+        <button id="start" aria-label="Start timer">START</button>
+      </div>
+      <div id="reset-btn">
+        <button id="reset" aria-label="Reset timer">RESET</button>
+      </div>
+    </main>
+    <section id="summary" aria-label="Session summary"></section>
+    <script src="script.js"></script>
+  </body>
+</html>
